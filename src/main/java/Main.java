@@ -4,5 +4,8 @@ public class Main
     {
         Task1 task1 = new Task1();
         task1.task1();
+
+        Task2 task2 = new Task2();
+        task2.task2();
     }
 }
