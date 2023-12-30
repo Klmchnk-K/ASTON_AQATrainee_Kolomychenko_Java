@@ -17,7 +17,7 @@ public class Task2
 
         String name = scanner.nextLine();
 
-        if (name.equals(NAME_VYACHESLAV))
+        if (name.equalsIgnoreCase(NAME_VYACHESLAV))
         {
             System.out.println(HELLO_VYACHESLAV);
         }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Task3
 {
     private static final String TASKS_N = "\nЗАДАНИЕ 3\n";
-    private static final String ENTER_NUMBERS = "Введите числовой массив:";
+    private static final String ENTER_NUMBERS = "Введите числа через пробел:";
     private static final int DIVIDER = 3;
 
     public void task3()
@@ -13,15 +13,15 @@ public class Task3
 
         Scanner scanner = new Scanner(System.in);
 
-        double number;
+        String[] enteredNumbers = scanner.nextLine().split(" ");
 
-        while (scanner.hasNext())
+        for (String e: enteredNumbers)
         {
-            number = scanner.nextDouble();
+            double currentNumber = Double.parseDouble(e);
 
-            if (number % DIVIDER == 0)
+            if (currentNumber % DIVIDER == 0)
             {
-                System.out.println((int)number);
+                System.out.print((int)currentNumber + " ");
             }
         }
     }
